@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  h1 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-lg;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-base;
+    @apply font-semibold;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", "Poppins", Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: rgb(240 249 255);
+}
