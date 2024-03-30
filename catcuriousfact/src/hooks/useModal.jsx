@@ -6,7 +6,11 @@ export const useModal = (initialValue = false) => {
   const openModal = (index) => {
     setIsOpen(true)
     setDataIndex(index)
+    document.body.style.overflow = "hidden"
   }
-  const closeModal = () => setIsOpen(false)
+  const closeModal = () => {
+    setIsOpen(false)
+    document.body.style.overflow = "visible"
+  }
   return [isOpen, dataIndex, openModal, closeModal]
 }

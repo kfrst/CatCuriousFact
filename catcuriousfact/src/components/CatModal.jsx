@@ -6,7 +6,7 @@ export function CatModal(props) {
   const handleModalClick = (e) => e.stopPropagation()
   return (
     <article
-      className="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-black/50 z-50 text-sm text-white touch-auto overflow-auto"
+      className="fixed flex justify-center p-2 items-center top-0 left-0 w-full h-full bg-black/50 z-50 text-sm text-white touch-auto overflow-auto"
       onClick={closeModal}
     >
       <div

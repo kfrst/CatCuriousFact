@@ -26,7 +26,7 @@ export function useCatBreeds() {
           setCatBreeds((c) => [...c, ...response])
         }
       } catch (e) {
-        setError(e.message)
+        setError((e) => e.message)
       }
     }
     getBreeds()

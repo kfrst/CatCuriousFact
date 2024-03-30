@@ -15,10 +15,10 @@ export function useCatItems(selectedBreed) {
       const itemInfo = breedInfo ? breedInfo : selectedBreed
       const newItem = createItem(nextId, newFact, newImage, itemInfo)
       if (imageError) setItemError(imageError)
-      setCatItems([newItem, ...catItems])
+      setCatItems((catItems) => [newItem, ...catItems])
       nextId++
     } catch (e) {
-      setItemError(e.message)
+      setItemError((e) => e.message)
     }
   }
 
