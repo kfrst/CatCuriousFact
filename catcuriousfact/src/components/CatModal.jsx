@@ -6,11 +6,11 @@ export function CatModal(props) {
   const handleModalClick = (e) => e.stopPropagation()
   return (
     <article
-      className="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-black/50 z-50 text-sm text-white"
+      className="fixed flex justify-center items-center top-0 left-0 w-full h-full bg-black/50 z-50 text-sm text-white touch-auto overflow-auto"
       onClick={closeModal}
     >
       <div
-        className="relative max-lg:m-2 mx-auto my-4 w-auto max-w-sm md:max-w-lg lg:max-w-screen-lg bg-blue-950 rounded-xl"
+        className="relative m-auto w-auto max-w-sm md:max-w-lg lg:max-w-screen-lg bg-blue-950 rounded-xl"
         onClick={handleModalClick}
       >
         <div className="p-4">
